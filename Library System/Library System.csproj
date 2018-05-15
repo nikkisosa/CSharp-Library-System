@@ -44,6 +44,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="config.cs" />
+    <Compile Include="Entity\variables.cs" />
     <Compile Include="frmMain.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -52,6 +54,18 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="View\forgotPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\forgotPassword.Designer.cs">
+      <DependentUpon>forgotPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\login.Designer.cs">
+      <DependentUpon>login.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\ucCreateUser.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -71,6 +85,12 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="View\forgotPassword.resx">
+      <DependentUpon>forgotPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\login.resx">
+      <DependentUpon>login.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\ucCreateUser.resx">
       <DependentUpon>ucCreateUser.cs</DependentUpon>
     </EmbeddedResource>
@@ -89,7 +109,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Data\" />
-    <Folder Include="Entity\" />
     <Folder Include="Model\" />
   </ItemGroup>
   <ItemGroup>
@@ -127,6 +146,42 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\gallery_skype_color.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\key_white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_big.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_shield_big.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\book_shelf.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\remove_skype_color.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\number.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\send.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\send_skype_color.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\security_code_skype_color_sm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\round_next.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
