@@ -103,6 +103,26 @@ namespace Library_System.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap error_skype_color_1_md {
+            get {
+                object obj = ResourceManager.GetObject("error_skype_color_1_md", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap error_skype_color_md {
+            get {
+                object obj = ResourceManager.GetObject("error_skype_color_md", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap gallery {
             get {
                 object obj = ResourceManager.GetObject("gallery", resourceCulture);
@@ -116,6 +136,26 @@ namespace Library_System.Properties {
         internal static System.Drawing.Bitmap gallery_skype_color {
             get {
                 object obj = ResourceManager.GetObject("gallery_skype_color", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap information_skype_color_1_md {
+            get {
+                object obj = ResourceManager.GetObject("information_skype_color_1_md", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap information_skype_color_md {
+            get {
+                object obj = ResourceManager.GetObject("information_skype_color_md", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -166,6 +206,26 @@ namespace Library_System.Properties {
         internal static System.Drawing.Bitmap previous {
             get {
                 object obj = ResourceManager.GetObject("previous", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap question_skype_color_1_md {
+            get {
+                object obj = ResourceManager.GetObject("question_skype_color_1_md", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap question_skype_color_md {
+            get {
+                object obj = ResourceManager.GetObject("question_skype_color_md", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -296,6 +356,26 @@ namespace Library_System.Properties {
         internal static System.Drawing.Bitmap user_shield_big {
             get {
                 object obj = ResourceManager.GetObject("user_shield_big", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap warning_skype_color_1_md {
+            get {
+                object obj = ResourceManager.GetObject("warning_skype_color_1_md", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap warning_skype_color_md {
+            get {
+                object obj = ResourceManager.GetObject("warning_skype_color_md", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

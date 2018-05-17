@@ -54,6 +54,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="View\customMessage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\customMessage.Designer.cs">
+      <DependentUpon>customMessage.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\forgotPassword.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -85,6 +91,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="View\customMessage.resx">
+      <DependentUpon>customMessage.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\forgotPassword.resx">
       <DependentUpon>forgotPassword.cs</DependentUpon>
     </EmbeddedResource>
@@ -182,6 +191,30 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\warning_skype_color_md.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\error_skype_color_md.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\information_skype_color_md.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\question_skype_color_md.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\information_skype_color_1_md.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\question_skype_color_1_md.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\warning_skype_color_1_md.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\error_skype_color_1_md.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

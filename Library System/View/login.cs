@@ -18,7 +18,9 @@ namespace Library_System.View
         public login()
         {
             InitializeComponent();
+            
         }
+        customMessage cm;
 
         private void dragFormDown(MouseEventArgs e)
         {
@@ -91,6 +93,42 @@ namespace Library_System.View
         private void login_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            cm = new customMessage();
+           
+            if(txtUsername.Text != string.Empty)
+            {
+                if (txtPassword.Text != string.Empty)
+                {
+                    if(txtUsername.Text == "admin" && txtPassword.Text == "admin")
+                    {
+                        frmMain frm = new frmMain();
+                        this.Hide();
+                        frm.Show();
+                    }
+                    else
+                    {
+                        cm.icon = "error";
+                        cm.custom_message("Message", "Invalid username/password", MessageBoxButtons.OK);
+                        cm.ShowDialog();
+                    }
+                }
+                else
+                {
+                    cm.icon = "warning";
+                    cm.custom_message("Message", "Please enter your valid password", MessageBoxButtons.OK);
+                    cm.ShowDialog();
+                }
+            }
+            else
+            {
+                cm.icon = "warning";
+                cm.custom_message("Message", "Please enter your valid username", MessageBoxButtons.OK);
+                cm.ShowDialog();
+            }
         }
     }
 }

@@ -3,10 +3,11 @@ D:\Share data\Library System\Library System\bin\Debug\Library System.exe
 D:\Share data\Library System\Library System\bin\Debug\Library System.pdb
 D:\Share data\Library System\Library System\obj\Debug\Library_System.frmMain.resources
 D:\Share data\Library System\Library System\obj\Debug\Library_System.Properties.Resources.resources
+D:\Share data\Library System\Library System\obj\Debug\Library_System.View.customMessage.resources
+D:\Share data\Library System\Library System\obj\Debug\Library_System.View.forgotPassword.resources
+D:\Share data\Library System\Library System\obj\Debug\Library_System.View.login.resources
 D:\Share data\Library System\Library System\obj\Debug\Library_System.View.ucCreateUser.resources
 D:\Share data\Library System\Library System\obj\Debug\Library System.csproj.GenerateResource.Cache
 D:\Share data\Library System\Library System\obj\Debug\Library System.exe
 D:\Share data\Library System\Library System\obj\Debug\Library System.pdb
-D:\Share data\Library System\Library System\obj\Debug\Library_System.View.login.resources
-D:\Share data\Library System\Library System\obj\Debug\Library_System.View.forgotPassword.resources
 D:\Share data\Library System\Library System\obj\Debug\Library System.csprojResolveAssemblyReference.cache

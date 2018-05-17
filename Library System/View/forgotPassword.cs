@@ -38,31 +38,43 @@ namespace Library_System.View
 
         private void btnSend_Click(object sender, EventArgs e)
         {
-            SerialPort _serial = new SerialPort();
-            _serial.BaudRate = 115200;
-            _serial.Parity = Parity.None;
-            _serial.StopBits = StopBits.One;
-            _serial.DataBits = 8;
-            _serial.Handshake = Handshake.None;
-            _serial.RtsEnable = true;
-            _serial.NewLine = "\n";
-            _serial.PortName = "COM5";
-            _serial.Open();
-            _serial.WriteLine("AT\r");
-            Thread.Sleep(100);
-            _serial.WriteLine("AT+CMGF=1\r");
-            Thread.Sleep(100);
-            _serial.WriteLine("AT+CMGS=\"" + txtNumber.Text + "\"\r");
-            Thread.Sleep(100);
-            _serial.WriteLine(rnd.Next(111111,999999) + "\r");
-            Thread.Sleep(100);
-            _serial.Write(new byte[] { 26 }, 0, 1);
-            Thread.Sleep(100);
-            _serial.Close();
-            pnlSend.SendToBack();
-            pnlCode.BringToFront();
-            pnlCode.Visible = true;
-            pnlSend.Visible = false;
+            if(txtNumber.Text != string.Empty)
+            {
+                SerialPort _serial = new SerialPort();
+                _serial.BaudRate = 115200;
+                _serial.Parity = Parity.None;
+                _serial.StopBits = StopBits.One;
+                _serial.DataBits = 8;
+                _serial.Handshake = Handshake.None;
+                _serial.RtsEnable = true;
+                _serial.NewLine = "\n";
+                _serial.PortName = "COM5";
+                _serial.Open();
+                _serial.WriteLine("AT\r");
+                Thread.Sleep(100);
+                _serial.WriteLine("AT+CMGF=1\r");
+                Thread.Sleep(100);
+                _serial.WriteLine("AT+CMGS=\"" + txtNumber.Text + "\"\r");
+                Thread.Sleep(100);
+                _serial.WriteLine(rnd.Next(111111, 999999) + "\r");
+                Thread.Sleep(100);
+                _serial.Write(new byte[] { 26 }, 0, 1);
+                Thread.Sleep(100);
+                _serial.Close();
+                pnlSend.SendToBack();
+                pnlCode.BringToFront();
+                pnlCode.Visible = true;
+                pnlSend.Visible = false;
+            }
+            else
+            {
+                customMessage cm = new customMessage();
+                cm.icon = "information";
+                cm.custom_message("Message","Please enter your registered mobile number",MessageBoxButtons.OK);
+                cm.ShowDialog();
+                
+            }
+            
         }
 
         private void btnProceed_Click(object sender, EventArgs e)

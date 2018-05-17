@@ -29,18 +29,18 @@
         private void InitializeComponent()
         {
             this.pnlHeader = new System.Windows.Forms.Panel();
-            this.pnlSideBar = new System.Windows.Forms.Panel();
-            this.pnlBody = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.pbNotification = new System.Windows.Forms.PictureBox();
             this.pbSettings = new System.Windows.Forms.PictureBox();
             this.pbClose = new System.Windows.Forms.PictureBox();
+            this.pnlSideBar = new System.Windows.Forms.Panel();
             this.btnUser = new System.Windows.Forms.Button();
+            this.pnlBody = new System.Windows.Forms.Panel();
             this.pnlHeader.SuspendLayout();
-            this.pnlSideBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbNotification)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbSettings)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbClose)).BeginInit();
+            this.pnlSideBar.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlHeader
@@ -60,31 +60,11 @@
             this.pnlHeader.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pnlHeader_MouseMove);
             this.pnlHeader.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pnlHeader_MouseUp);
             // 
-            // pnlSideBar
-            // 
-            this.pnlSideBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(175)))), ((int)(((byte)(240)))));
-            this.pnlSideBar.Controls.Add(this.btnUser);
-            this.pnlSideBar.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pnlSideBar.Location = new System.Drawing.Point(0, 32);
-            this.pnlSideBar.Margin = new System.Windows.Forms.Padding(0);
-            this.pnlSideBar.Name = "pnlSideBar";
-            this.pnlSideBar.Size = new System.Drawing.Size(207, 615);
-            this.pnlSideBar.TabIndex = 1;
-            // 
-            // pnlBody
-            // 
-            this.pnlBody.BackColor = System.Drawing.Color.White;
-            this.pnlBody.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlBody.Location = new System.Drawing.Point(207, 32);
-            this.pnlBody.Margin = new System.Windows.Forms.Padding(0);
-            this.pnlBody.Name = "pnlBody";
-            this.pnlBody.Size = new System.Drawing.Size(747, 615);
-            this.pnlBody.TabIndex = 2;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Bell MT", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(12, 3);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(145, 25);
@@ -127,6 +107,17 @@
             this.pbClose.TabIndex = 0;
             this.pbClose.TabStop = false;
             // 
+            // pnlSideBar
+            // 
+            this.pnlSideBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(175)))), ((int)(((byte)(240)))));
+            this.pnlSideBar.Controls.Add(this.btnUser);
+            this.pnlSideBar.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pnlSideBar.Location = new System.Drawing.Point(0, 32);
+            this.pnlSideBar.Margin = new System.Windows.Forms.Padding(0);
+            this.pnlSideBar.Name = "pnlSideBar";
+            this.pnlSideBar.Size = new System.Drawing.Size(207, 615);
+            this.pnlSideBar.TabIndex = 1;
+            // 
             // btnUser
             // 
             this.btnUser.BackColor = System.Drawing.Color.White;
@@ -140,6 +131,16 @@
             this.btnUser.Text = "User";
             this.btnUser.UseVisualStyleBackColor = false;
             this.btnUser.Click += new System.EventHandler(this.btnUser_Click);
+            // 
+            // pnlBody
+            // 
+            this.pnlBody.BackColor = System.Drawing.Color.White;
+            this.pnlBody.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlBody.Location = new System.Drawing.Point(207, 32);
+            this.pnlBody.Margin = new System.Windows.Forms.Padding(0);
+            this.pnlBody.Name = "pnlBody";
+            this.pnlBody.Size = new System.Drawing.Size(747, 615);
+            this.pnlBody.TabIndex = 2;
             // 
             // frmMain
             // 
@@ -157,10 +158,10 @@
             this.Text = "Library System";
             this.pnlHeader.ResumeLayout(false);
             this.pnlHeader.PerformLayout();
-            this.pnlSideBar.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pbNotification)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbSettings)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbClose)).EndInit();
+            this.pnlSideBar.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

@@ -29,22 +29,22 @@
         private void InitializeComponent()
         {
             this.pnlSide = new System.Windows.Forms.Panel();
+            this.pbClose = new System.Windows.Forms.PictureBox();
             this.lblForgot = new System.Windows.Forms.LinkLabel();
             this.btnLogin = new System.Windows.Forms.Button();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.txtUsername = new System.Windows.Forms.TextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pbClose = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pnlSide.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbClose)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlSide
@@ -66,6 +66,19 @@
             this.pnlSide.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pnlSide_MouseDown);
             this.pnlSide.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pnlSide_MouseMove);
             this.pnlSide.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pnlSide_MouseUp);
+            // 
+            // pbClose
+            // 
+            this.pbClose.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pbClose.Image = global::Library_System.Properties.Resources.remove_skype_color;
+            this.pbClose.Location = new System.Drawing.Point(216, 3);
+            this.pbClose.MaximumSize = new System.Drawing.Size(25, 25);
+            this.pbClose.MinimumSize = new System.Drawing.Size(25, 25);
+            this.pbClose.Name = "pbClose";
+            this.pbClose.Size = new System.Drawing.Size(25, 25);
+            this.pbClose.TabIndex = 5;
+            this.pbClose.TabStop = false;
+            this.pbClose.Click += new System.EventHandler(this.pbClose_Click);
             // 
             // lblForgot
             // 
@@ -92,6 +105,31 @@
             this.btnLogin.TabIndex = 3;
             this.btnLogin.Text = "Login";
             this.btnLogin.UseVisualStyleBackColor = false;
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::Library_System.Properties.Resources.key_white;
+            this.pictureBox3.Location = new System.Drawing.Point(6, 148);
+            this.pictureBox3.MaximumSize = new System.Drawing.Size(22, 22);
+            this.pictureBox3.MinimumSize = new System.Drawing.Size(22, 22);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(22, 22);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox3.TabIndex = 4;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::Library_System.Properties.Resources.user;
+            this.pictureBox2.Location = new System.Drawing.Point(6, 124);
+            this.pictureBox2.MaximumSize = new System.Drawing.Size(22, 22);
+            this.pictureBox2.MinimumSize = new System.Drawing.Size(22, 22);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(22, 22);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox2.TabIndex = 3;
+            this.pictureBox2.TabStop = false;
             // 
             // txtUsername
             // 
@@ -99,6 +137,16 @@
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.Size = new System.Drawing.Size(196, 20);
             this.txtUsername.TabIndex = 1;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Library_System.Properties.Resources.user_shield_big;
+            this.pictureBox1.Location = new System.Drawing.Point(78, 29);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(93, 84);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
             // 
             // txtPassword
             // 
@@ -130,53 +178,6 @@
             this.pictureBox4.TabIndex = 7;
             this.pictureBox4.TabStop = false;
             // 
-            // pbClose
-            // 
-            this.pbClose.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pbClose.Image = global::Library_System.Properties.Resources.remove_skype_color;
-            this.pbClose.Location = new System.Drawing.Point(216, 3);
-            this.pbClose.MaximumSize = new System.Drawing.Size(25, 25);
-            this.pbClose.MinimumSize = new System.Drawing.Size(25, 25);
-            this.pbClose.Name = "pbClose";
-            this.pbClose.Size = new System.Drawing.Size(25, 25);
-            this.pbClose.TabIndex = 5;
-            this.pbClose.TabStop = false;
-            this.pbClose.Click += new System.EventHandler(this.pbClose_Click);
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::Library_System.Properties.Resources.key_white;
-            this.pictureBox3.Location = new System.Drawing.Point(6, 148);
-            this.pictureBox3.MaximumSize = new System.Drawing.Size(22, 22);
-            this.pictureBox3.MinimumSize = new System.Drawing.Size(22, 22);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(22, 22);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox3.TabIndex = 4;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::Library_System.Properties.Resources.user;
-            this.pictureBox2.Location = new System.Drawing.Point(6, 124);
-            this.pictureBox2.MaximumSize = new System.Drawing.Size(22, 22);
-            this.pictureBox2.MinimumSize = new System.Drawing.Size(22, 22);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(22, 22);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox2.TabIndex = 3;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Library_System.Properties.Resources.user_shield_big;
-            this.pictureBox1.Location = new System.Drawing.Point(78, 29);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(93, 84);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
-            // 
             // login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -196,11 +197,11 @@
             this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.login_MouseUp);
             this.pnlSide.ResumeLayout(false);
             this.pnlSide.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbClose)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

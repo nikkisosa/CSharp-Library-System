@@ -40,6 +40,7 @@
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
+            this.lblTitle = new System.Windows.Forms.Label();
             this.btnChange = new System.Windows.Forms.Button();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
@@ -119,6 +120,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(175)))), ((int)(((byte)(240)))));
+            this.panel1.Controls.Add(this.lblTitle);
             this.panel1.Controls.Add(this.pbClose);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -175,6 +177,17 @@
             this.textBox3.Size = new System.Drawing.Size(217, 20);
             this.textBox3.TabIndex = 32;
             this.textBox3.UseSystemPasswordChar = true;
+            // 
+            // lblTitle
+            // 
+            this.lblTitle.AutoSize = true;
+            this.lblTitle.Font = new System.Drawing.Font("Bell MT", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitle.ForeColor = System.Drawing.Color.White;
+            this.lblTitle.Location = new System.Drawing.Point(3, 3);
+            this.lblTitle.Name = "lblTitle";
+            this.lblTitle.Size = new System.Drawing.Size(158, 25);
+            this.lblTitle.TabIndex = 22;
+            this.lblTitle.Text = "Forgot Password";
             // 
             // btnChange
             // 
@@ -300,6 +313,7 @@
             this.Controls.Add(this.pnlCode);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "forgotPassword";
+            this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.forgotPassword_Load);
             this.pnlSend.ResumeLayout(false);
@@ -307,6 +321,7 @@
             this.pnlCode.ResumeLayout(false);
             this.pnlCode.PerformLayout();
             this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.pnlCreateNew.ResumeLayout(false);
             this.pnlCreateNew.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
@@ -340,5 +355,6 @@
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.Label lblTitle;
     }
 }
